@@ -1,0 +1,70 @@
+body {
+    overflow: hidden;
+}
+
+.name-container {
+    text-align: center;
+}
+
+.controls {
+    margin-top: 30px;
+    margin-left: 5px;
+    padding: 5px;
+    height: 400px;
+    width: 300px;
+    border: solid 3px;
+    border-radius: 20px;
+}
+
+.machine {
+    margin: 30px 0 0 -30px;
+    border: solid 5px;
+    border-radius: 30px;
+    background-color: rgb(75, 74, 74);
+    color: rgb(255, 255, 255);
+
+}
+
+.cell {
+    height: 110px;
+    margin-bottom: 20px;
+}
+
+.cell:hover {
+    outline: 1px solid red;
+}
+
+.productInfo {
+    padding: 10px 10px 10px 20px;
+}
+
+.payButton {
+    width: 100px;
+    height: 60px;
+    margin-top: 20px;
+    font-size: 2em;
+    margin-left: 15px;
+}
+
+.selected .image {
+    animation-name: rotate;
+    animation-duration: 2s;
+}
+
+.sold .image {
+    animation-name: drop;
+    animation-duration: 2s;
+}
+
+.image {
+    padding: 10px;
+}
+
+@keyframes rotate {
+    33% { transform: rotate(-15deg); }
+    66% { transform: rotate(15deg); }
+}
+
+@keyframes drop {
+    99% { transform: translateY(600px) rotate(120deg); }
+}
